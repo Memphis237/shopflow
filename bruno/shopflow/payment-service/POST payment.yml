@@ -1,0 +1,15 @@
+info:
+  name: POST payment
+  type: http
+
+http:
+  method: POST
+  url: "{{payment}}/api/v1/payments"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: true
